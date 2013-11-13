@@ -3,6 +3,7 @@
 	<name>Advoga-BeanClient</name>
 	<comment></comment>
 	<projects>
+		<project>Advoga-EAR</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

@@ -7,6 +7,6 @@ public class CustoDAO extends GenericDAO<Custo> {
 	
 	public CustoDAO() {
 		super(Custo.class);
-	}
+	}	
 
 }

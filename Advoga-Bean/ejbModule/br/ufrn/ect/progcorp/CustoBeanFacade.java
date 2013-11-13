@@ -18,7 +18,7 @@ public class CustoBeanFacade implements CustoManagerRemoteBusiness {
 	 * Name we'll assign to this EJB, will be referenced in the corresponding
 	 * META-INF/ejb-jar.xml file
 	 */
-	static final String EJB_NAME = "UserEJB";
+	static final String EJB_NAME = "CustoEJB";
 	
 	@EJB
 	CustoDAO dao;
@@ -30,25 +30,22 @@ public class CustoBeanFacade implements CustoManagerRemoteBusiness {
 
 	@Override
 	public Custo readCusto(int custoId) throws CustoManagerException {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.find(custoId);
 	}
 
 	@Override
 	public Custo updateCusto(Custo custo) throws CustoManagerException {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.update(custo);
 	}
 
 	@Override
 	public void deleteCusto(Custo custo) throws CustoManagerException {
-		// TODO Auto-generated method stub
+		dao.delete(custo);
 	}
 
 	@Override
 	public List<Custo> getCustos() throws CustoManagerException {
-		// TODO Auto-generated method stub
-		return null;
+		return dao.findAll();
 	}
 
 
